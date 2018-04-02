@@ -1,46 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimaryDark"
+    android:fillViewport="true">
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="com.example.android.mymusicapp.MainActivity">
 
     <TextView
         android:id="@+id/sixties"
         style="@style/CategoryStyle"
-        android:background="@color/category_sixties"
-        android:text="@string/category_sixties" />
+        android:background="@drawable/sixties"/>
 
     <TextView
         android:id="@+id/seventies"
         style="@style/CategoryStyle"
-        android:background="@color/category_seventies"
-        android:text="@string/category_seventies" />
+        android:background="@drawable/seventies"/>
 
     <TextView
         android:id="@+id/eighties"
         style="@style/CategoryStyle"
-        android:background="@color/category_eighties"
-        android:text="@string/category_eighties" />
+        android:background="@drawable/eighties"/>
 
     <TextView
         android:id="@+id/nineties"
         style="@style/CategoryStyle"
-        android:background="@color/category_nineties"
-        android:text="@string/category_nineties" />
+        android:background="@drawable/nineties"/>
 
     <TextView
         android:id="@+id/thousand"
         style="@style/CategoryStyle"
-        android:background="@color/category_thousand"
-        android:text="@string/category_thousand" />
+        android:background="@drawable/thousand"/>
 
     <TextView
         android:id="@+id/thousandten"
         style="@style/CategoryStyle"
-        android:background="@color/category_thousandten"
-        android:text="@string/category_thousandten" />
+        android:background="@drawable/thousandten"/>
 
-</LinearLayout>
+    </LinearLayout>
+</ScrollView>
