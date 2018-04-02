@@ -1,9 +1,16 @@
 <resources>
+    <!-- String Name for the app -->
     <string name="app_name">MyMusicApp</string>
+    <!-- String Name for the sixties category -->
     <string name="category_sixties">60's</string>
+    <!-- String Name for the seventies category -->
     <string name="category_seventies">70's</string>
+    <!-- String Name for the eighties category -->
     <string name="category_eighties">80's</string>
+    <!-- String Name for the nineties category -->
     <string name="category_nineties">90's</string>
+    <!-- String Name for the thousand category -->
     <string name="category_thousand">2000's</string>
+    <!-- String Name for the thousandten category -->
     <string name="category_thousandten">2010's</string>
 </resources>
