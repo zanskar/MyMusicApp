@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MyMusicApp</string>
+    <string name="category_sixties">60's</string>
+    <string name="category_seventies">70's</string>
+    <string name="category_eighties">80's</string>
+    <string name="category_nineties">90's</string>
+    <string name="category_thousand">2000's</string>
+    <string name="category_thousandten">2010's</string>
+</resources>
