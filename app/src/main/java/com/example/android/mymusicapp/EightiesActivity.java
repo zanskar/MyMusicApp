@@ -6,6 +6,7 @@ package com.example.android.mymusicapp;
         import android.view.View;
         import android.widget.AdapterView;
         import android.widget.ListView;
+        import android.widget.Toast;
 
         import java.util.ArrayList;
 
@@ -19,21 +20,21 @@ public class EightiesActivity extends AppCompatActivity {
         // Create a list of eighties songs
         final ArrayList<Song> songs = new ArrayList<Song>();
         songs.add(new Song("Mickael Jackson", "Billie Jean",
-                R.drawable.notes));
+                R.drawable.hp));
         songs.add(new Song("Eurythmics", "Sweet dreams",
-                R.drawable.notes));
+                R.drawable.hp));
         songs.add(new Song("Aha", "Take on me",
-                R.drawable.notes));
+                R.drawable.hp));
         songs.add(new Song("Bonnie Tyler", "Total eclipse of the heart",
-                R.drawable.notes));
+                R.drawable.hp));
         songs.add(new Song("Mike Oldfield", "Moonlight shadow",
-                R.drawable.notes));
+                R.drawable.hp));
         songs.add(new Song("George Michael", "Careless whisper",
-                R.drawable.notes));
+                R.drawable.hp));
         songs.add(new Song("Irene Cara", "What a feeling",
-                R.drawable.notes));
+                R.drawable.hp));
         songs.add(new Song("Elton John", "I'm still standing",
-                R.drawable.notes));
+                R.drawable.hp));
 
         // Create an {@link SongAdapter}, whose data source is a list of {@link Songs}. The
         // adapter knows how to create list items for each item in the list.
@@ -51,11 +52,8 @@ public class EightiesActivity extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
-                // Create a new intent to open the {@link PlayingActivity}
-                Intent playingIntent = new Intent(EightiesActivity.this, PlayingActivity.class);
-
-                // Start the new activity
-                startActivity(playingIntent);
+                // Display a toast message saying that thereis no mp3  file yet.
+                Toast.makeText(getApplicationContext(), getString(R.string.nofile), Toast.LENGTH_LONG).show();
             }
         });
     }

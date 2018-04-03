@@ -1,4 +1,5 @@
 package com.example.android.mymusicapp;
+import android.content.Context;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
@@ -6,6 +7,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -19,21 +22,21 @@ public class SixtiesActivity extends AppCompatActivity {
         // Create a list of sixties songs
         final ArrayList<Song> songs = new ArrayList<Song>();
         songs.add(new Song("Bill Haley", "Rock Around the Clock",
-                R.drawable.notes));
+                R.drawable.hp));
         songs.add(new Song("Simon and Garfunkel", "The Sound of Silence",
-                R.drawable.notes));
+                R.drawable.hp));
         songs.add(new Song("The Beatles", "I wanna hold your hand",
-                R.drawable.notes));
+                R.drawable.hp));
         songs.add(new Song("The Rolling Stones", "I can't get no satisfaction",
-                R.drawable.notes));
+                R.drawable.hp));
         songs.add(new Song("The Beach Boys", "Good vibrations",
-                R.drawable.notes));
+                R.drawable.hp));
         songs.add(new Song("The animals", "The house of rising sun",
-                R.drawable.notes));
+                R.drawable.hp));
         songs.add(new Song("The Beatles", "Come together",
-                R.drawable.notes));
+                R.drawable.hp));
         songs.add(new Song("Procol Harum", "A wither shade of pale",
-                R.drawable.notes));
+                R.drawable.hp));
 
         // Create an {@link SongAdapter}, whose data source is a list of {@link Songs}. The
         // adapter knows how to create list items for each item in the list.
@@ -51,12 +54,9 @@ public class SixtiesActivity extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
-                        // Create a new intent to open the {@link PlayingActivity}
-                        Intent playingIntent = new Intent(SixtiesActivity.this, PlayingActivity.class);
-
-                        // Start the new activity
-                        startActivity(playingIntent);
-                    }
-                });
+                // Display a toast message saying that thereis no mp3  file yet.
+                Toast.makeText(getApplicationContext(), getString(R.string.nofile), Toast.LENGTH_LONG).show();
+            }
+        });
     }
 }

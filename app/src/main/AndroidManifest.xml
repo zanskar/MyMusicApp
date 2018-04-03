@@ -20,10 +20,7 @@
         <activity android:name=".SeventiesActivity" />
         <activity android:name=".EightiesActivity" />
         <activity android:name=".NinetiesActivity" />
-        <activity android:name=".ThousandActivity" />
-        <activity android:name=".ThousandtenActivity" />
         <activity android:name=".SongAdapter" />
-        <activity android:name=".PlayingActivity" />
         <activity android:name=".Song"></activity>
     </application>
 

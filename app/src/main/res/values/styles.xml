@@ -15,4 +15,14 @@
         <item name="android:textColor">@color/colorText</item>
         <item name="android:textAppearance">?android:textAppearanceMedium</item>
     </style>
+    <!-- Style for description of activities -->
+    <style name="IntroStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:padding">@dimen/text_padding_vertical</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textAppearance">?android:textAppearanceSmall</item>
+        <item name="android:background">@color/light_background</item>
+    </style>
 </resources>

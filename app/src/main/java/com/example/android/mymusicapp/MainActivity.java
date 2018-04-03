@@ -75,35 +75,5 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(ninetiesIntent);
             }
         });
-        // Find the View that shows the thousand category
-        TextView thousand = (TextView) findViewById(R.id.thousand);
-
-        // Set a click listener on that View
-        thousand.setOnClickListener(new View.OnClickListener() {
-            // The code in this method will be executed when the song category is clicked on.
-            @Override
-            public void onClick(View view) {
-                // Create a new intent to open the {@link ThousandActivity}
-                Intent thousandIntent = new Intent(MainActivity.this, ThousandActivity.class);
-
-                // Start the new activity
-                startActivity(thousandIntent);
-            }
-        });
-        // Find the View that shows the thousandten category
-        TextView thousandten = (TextView) findViewById(R.id.thousandten);
-
-        // Set a click listener on that View
-        thousandten.setOnClickListener(new View.OnClickListener() {
-            // The code in this method will be executed when the song category is clicked on.
-            @Override
-            public void onClick(View view) {
-                // Create a new intent to open the {@link SixtiesActivity}
-                Intent thousandtenIntent = new Intent(MainActivity.this, ThousandtenActivity.class);
-
-                // Start the new activity
-                startActivity(thousandtenIntent);
-            }
-        });
     }
 }

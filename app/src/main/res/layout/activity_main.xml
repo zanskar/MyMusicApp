@@ -11,6 +11,11 @@
         android:orientation="vertical"
         tools:context="com.example.android.mymusicapp.MainActivity">
 
+        <TextView
+            android:id="@+id/text_main_activity"
+            style="@style/IntroStyle"
+            android:text="@string/text_main_activity" />
+
         <LinearLayout
             android:id="@+id/container_sixties"
             android:layout_width="match_parent"
@@ -85,44 +90,6 @@
                 android:id="@+id/nineties"
                 style="@style/CategoryStyle"
                 android:text="@string/category_nineties" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/container_thousand"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:background="@color/category_thousand">
-
-            <ImageView
-                android:id="@+id/image_thousand"
-                android:layout_width="@dimen/image_dim"
-                android:layout_height="@dimen/image_dim"
-                android:src="@drawable/thousand" />
-
-            <TextView
-                android:id="@+id/thousand"
-                style="@style/CategoryStyle"
-                android:text="@string/category_thousand" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/container_thousandten"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:background="@color/category_thousandten">
-
-            <ImageView
-                android:id="@+id/image_thousandten"
-                android:layout_width="@dimen/image_dim"
-                android:layout_height="@dimen/image_dim"
-                android:src="@drawable/thousandten" />
-
-            <TextView
-                android:id="@+id/thousandten"
-                style="@style/CategoryStyle"
-                android:text="@string/category_thousandten" />
         </LinearLayout>
     </LinearLayout>
 </ScrollView>

@@ -1,6 +1,17 @@
 <resources>
     <!-- String Name for the app -->
     <string name="app_name">Music time machine</string>
+    <!-- String Name top of main activity -->
+    <string name="text_main_activity">
+        This screen displays a list of categories of songs classified by period, using ListView and ArrayAdapter to display the list.
+        When clicked on any period item, a new activity is opened with a list on songs of this period. When clicking on a song, a toast message says that no mp3 file is avaiable yet
+    </string>
+    <!-- String Name top of a period activity -->
+    <string name="list_item_activity">
+        This screen displays a list of songs based on the period chosen in MainActivity
+        This uses ListView and ArrayAdapter to display the list. When clicked on any list
+        item, a toast message is displayed to say there is no mp3 loaded yet.
+    </string>
     <!-- String Name for the sixties category -->
     <string name="category_sixties">If you like rock\'n roll, play 60\'s songs.</string>
     <!-- String Name for the seventies category -->
@@ -9,8 +20,6 @@
     <string name="category_eighties">Taste the incredible 80\'s mood. </string>
     <!-- String Name for the nineties category -->
     <string name="category_nineties">Remember the most famous 90\'s songs.</string>
-    <!-- String Name for the thousand category -->
-    <string name="category_thousand">Songs of the millenium in the 2000\'s.</string>
-    <!-- String Name for the thousandten category -->
-    <string name="category_thousandten">You prefer actual hits, go on 2010\'s.</string>
+    <!-- String No file when clicking on a song -->
+    <string name="nofile">No MP3 file available yet.</string>
 </resources>
