@@ -6,40 +6,123 @@
     android:fillViewport="true">
 
     <LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context="com.example.android.mymusicapp.MainActivity">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.example.android.mymusicapp.MainActivity">
 
-    <TextView
-        android:id="@+id/sixties"
-        style="@style/CategoryStyle"
-        android:background="@drawable/sixties"/>
+        <LinearLayout
+            android:id="@+id/container_sixties"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/category_sixties">
 
-    <TextView
-        android:id="@+id/seventies"
-        style="@style/CategoryStyle"
-        android:background="@drawable/seventies"/>
+            <ImageView
+                android:id="@+id/image_sixties"
+                android:layout_width="@dimen/image_dim"
+                android:layout_height="@dimen/image_dim"
+                android:src="@drawable/sixties" />
 
-    <TextView
-        android:id="@+id/eighties"
-        style="@style/CategoryStyle"
-        android:background="@drawable/eighties"/>
+            <TextView
+                android:id="@+id/sixties"
+                style="@style/CategoryStyle"
+                android:text="@string/category_sixties" />
+        </LinearLayout>
 
-    <TextView
-        android:id="@+id/nineties"
-        style="@style/CategoryStyle"
-        android:background="@drawable/nineties"/>
+        <LinearLayout
+            android:id="@+id/container_seventies"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/category_seventies">
 
-    <TextView
-        android:id="@+id/thousand"
-        style="@style/CategoryStyle"
-        android:background="@drawable/thousand"/>
+            <ImageView
+                android:id="@+id/image_seventies"
+                android:layout_width="@dimen/image_dim"
+                android:layout_height="@dimen/image_dim"
+                android:src="@drawable/seventies" />
 
-    <TextView
-        android:id="@+id/thousandten"
-        style="@style/CategoryStyle"
-        android:background="@drawable/thousandten"/>
+            <TextView
+                android:id="@+id/seventies"
+                style="@style/CategoryStyle"
+                android:text="@string/category_seventies" />
+        </LinearLayout>
 
+        <LinearLayout
+            android:id="@+id/container_eighties"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/category_eighties">
+
+            <ImageView
+                android:id="@+id/image_eighties"
+                android:layout_width="@dimen/image_dim"
+                android:layout_height="@dimen/image_dim"
+                android:src="@drawable/eighties" />
+
+            <TextView
+                android:id="@+id/eighties"
+                style="@style/CategoryStyle"
+                android:text="@string/category_eighties" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/container_nineties"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/category_nineties">
+
+            <ImageView
+                android:id="@+id/image_nineties"
+                android:layout_width="@dimen/image_dim"
+                android:layout_height="@dimen/image_dim"
+                android:src="@drawable/nineties" />
+
+            <TextView
+                android:id="@+id/nineties"
+                style="@style/CategoryStyle"
+                android:text="@string/category_nineties" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/container_thousand"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/category_thousand">
+
+            <ImageView
+                android:id="@+id/image_thousand"
+                android:layout_width="@dimen/image_dim"
+                android:layout_height="@dimen/image_dim"
+                android:src="@drawable/thousand" />
+
+            <TextView
+                android:id="@+id/thousand"
+                style="@style/CategoryStyle"
+                android:text="@string/category_thousand" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/container_thousandten"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/category_thousandten">
+
+            <ImageView
+                android:id="@+id/image_thousandten"
+                android:layout_width="@dimen/image_dim"
+                android:layout_height="@dimen/image_dim"
+                android:src="@drawable/thousandten" />
+
+            <TextView
+                android:id="@+id/thousandten"
+                style="@style/CategoryStyle"
+                android:text="@string/category_thousandten" />
+        </LinearLayout>
     </LinearLayout>
 </ScrollView>
