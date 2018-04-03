@@ -20,6 +20,14 @@
     <string name="category_eighties">Taste the incredible 80\'s mood. </string>
     <!-- String Name for the nineties category -->
     <string name="category_nineties">Remember the most famous 90\'s songs.</string>
+    <!-- String Name for the sixties activity -->
+    <string name="title_sixties">Best songs of the 60\'s</string>
+    <!-- String Name for the seventies activity -->
+    <string name="title_seventies">Best songs of the 70\'s</string>
+    <!-- String Name for the eighties activity -->
+    <string name="title_eighties">Best songs of the 80\'s. </string>
+    <!-- String Name for the nineties activity -->
+    <string name="title_nineties">Best songs of the 90\'s.</string>
     <!-- String No file when clicking on a song -->
     <string name="nofile">No MP3 file available yet.</string>
 </resources>
