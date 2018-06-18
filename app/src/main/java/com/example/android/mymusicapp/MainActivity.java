@@ -1,8 +1,8 @@
 package com.example.android.mymusicapp;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
 
@@ -15,12 +15,15 @@ public class MainActivity extends AppCompatActivity {
         // Set the content of the activity to use the activity_main.xml layout file
         setContentView(R.layout.activity_main);
 
-        // Find the View that shows the sixties category
+        // Find the View that shows each category
         TextView sixties = (TextView) findViewById(R.id.sixties);
+        TextView seventies = (TextView) findViewById(R.id.seventies);
+        TextView eighties = (TextView) findViewById(R.id.eighties);
+        TextView nineties = (TextView) findViewById(R.id.nineties);
 
-        // Set a click listener on that View
+        // Set a click listener on each View
         sixties.setOnClickListener(new View.OnClickListener() {
-            // The code in this method will be executed when the numbers category is clicked on.
+            // The code in this method will be executed when the song category is clicked on.
             @Override
             public void onClick(View view) {
                 // Create a new intent to open the {@link NumbersActivity}
@@ -30,9 +33,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(sixtiesIntent);
             }
         });
-        // Find the View that shows the seventies category
-        TextView seventies = (TextView) findViewById(R.id.seventies);
-
         // Set a click listener on that View
         seventies.setOnClickListener(new View.OnClickListener() {
             // The code in this method will be executed when the song category is clicked on.
@@ -45,8 +45,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(seventiesIntent);
             }
         });
-        // Find the View that shows the eighties category
-        TextView eighties = (TextView) findViewById(R.id.eighties);
 
         // Set a click listener on that View
         eighties.setOnClickListener(new View.OnClickListener() {
@@ -60,8 +58,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(eightiesIntent);
             }
         });
-        // Find the View that shows the nineties category
-        TextView nineties = (TextView) findViewById(R.id.nineties);
 
         // Set a click listener on that View
         nineties.setOnClickListener(new View.OnClickListener() {

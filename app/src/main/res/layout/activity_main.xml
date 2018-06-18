@@ -20,8 +20,8 @@
             android:id="@+id/container_sixties"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:background="@color/category_sixties">
+            android:background="@color/category_sixties"
+            android:orientation="horizontal">
 
             <ImageView
                 android:id="@+id/image_sixties"
@@ -39,8 +39,8 @@
             android:id="@+id/container_seventies"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:background="@color/category_seventies">
+            android:background="@color/category_seventies"
+            android:orientation="horizontal">
 
             <ImageView
                 android:id="@+id/image_seventies"
@@ -58,8 +58,8 @@
             android:id="@+id/container_eighties"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:background="@color/category_eighties">
+            android:background="@color/category_eighties"
+            android:orientation="horizontal">
 
             <ImageView
                 android:id="@+id/image_eighties"
@@ -77,8 +77,8 @@
             android:id="@+id/container_nineties"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:background="@color/category_nineties">
+            android:background="@color/category_nineties"
+            android:orientation="horizontal">
 
             <ImageView
                 android:id="@+id/image_nineties"

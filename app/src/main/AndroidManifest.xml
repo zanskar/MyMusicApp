@@ -16,12 +16,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SixtiesActivity" />
-        <activity android:name=".SeventiesActivity" />
-        <activity android:name=".EightiesActivity" />
-        <activity android:name=".NinetiesActivity" />
-        <activity android:name=".SongAdapter" />
-        <activity android:name=".Song"></activity>
+        <activity android:name=".SixtiesActivity"
+            android:label="@string/title_sixties"
+            android:parentActivityName="com.example.android.mymusicapp.MainActivity" />
+        <activity android:name=".SeventiesActivity"
+            android:label="@string/title_seventies"
+            android:parentActivityName="com.example.android.mymusicapp.MainActivity" />
+        <activity android:name=".EightiesActivity"
+            android:label="@string/title_eighties"
+            android:parentActivityName="com.example.android.mymusicapp.MainActivity" />
+        <activity android:name=".NinetiesActivity"
+            android:label="@string/title_nineties"
+            android:parentActivityName="com.example.android.mymusicapp.MainActivity" />
     </application>
 
 </manifest>
