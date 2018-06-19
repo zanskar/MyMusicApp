@@ -6,6 +6,7 @@ I chose to navigate between the ages, each decade is a button. When clicking on 
 
 ## Technical points
 <ul>
+  <li>Multiscreen app</li>
   <li>Use of ArrayList to store custom Objects</li>
   <li>Use of Custom Adapter to populate a layout with data</li>
   <li>Use of OnClickLIstener</li>
